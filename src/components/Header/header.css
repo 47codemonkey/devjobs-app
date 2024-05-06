@@ -1,0 +1,10 @@
+.header-wrapper {
+  position: relative;
+}
+
+.header-logo {
+  position: absolute;
+  top: 32px;
+  left: 12%;
+  z-index: 1;
+}

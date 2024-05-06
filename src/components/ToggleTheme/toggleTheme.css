@@ -1,0 +1,11 @@
+.toggle-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 112px;
+  height: 24px;
+  position: absolute;
+  top: 45px;
+  right: 12%;
+  z-index: 1;
+}
