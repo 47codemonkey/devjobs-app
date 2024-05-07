@@ -93,7 +93,7 @@ body.dark {
 }
 
 .switch__input:checked + .switch__label::before {
-  left: calc(100% - 20px);
+  left: calc(100% - 18px);
   border-color: #fff;
   background-color: #333;
   color: #fff;
