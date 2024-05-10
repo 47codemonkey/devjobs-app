@@ -16,7 +16,6 @@ export const HomePage = () => {
       try {
         const response = await axios.get(URL);
         setJobs(response.data);
-        console.log(response.data);
       } catch (error) {
         console.log('Error fetching data:', error);
       }

@@ -1,0 +1,37 @@
+.job-wrapper {
+  width: 730px;
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: aquamarine;
+  position: relative;
+  margin-top: -40px;
+  z-index: 1;
+}
+
+.job-header {
+  display: flex;
+  background-color: aqua;
+}
+
+.job-img {
+  width: 140px;
+  height: 140px;
+  background-color: brown;
+}
+
+.company-info-wrapper {
+  width: 590px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.company-site-btn {
+  width: 123px;
+  height: 48px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(201, 201, 201, 1);
+  color: rgba(89, 100, 224, 1);
+  font-weight: bold;
+  font-size: 16px;
+}

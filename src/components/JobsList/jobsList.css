@@ -55,9 +55,24 @@
   display: flex;
   justify-content: space-between;
   color: rgba(110, 128, 152, 1);
+  margin-bottom: 15px;
 }
 
 .dot {
   font-weight: bold;
   color: rgba(110, 128, 152, 1);
+}
+
+.position-name {
+  margin-bottom: 15px;
+}
+
+.company-name {
+  margin-bottom: 40px;
+  color: rgba(110, 128, 152, 1);
+}
+
+.location-name {
+  color: rgba(89, 100, 224, 1);
+  font-weight: bold;
 }
