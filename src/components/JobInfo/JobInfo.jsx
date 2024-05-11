@@ -1,7 +1,8 @@
-import './jobInfo.css';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
+
+import './jobInfo.css';
 
 export const JobInfo = () => {
   const { id } = useParams();
@@ -20,71 +21,76 @@ export const JobInfo = () => {
     fetchJobData();
   }, [id]);
 
+  const {
+    logo,
+    logoBackground,
+    company,
+    website,
+    position,
+    contract,
+    postedAt,
+    location,
+    description,
+    requirements,
+    role,
+  } = jobData;
+
   return (
     <>
       <div className="job-wrapper">
         <div className="job-header">
-          <img className="job-img" src={jobData.logo} alt="Company Logo" />
+          <div style={{ '--color': logoBackground }} className="job-img">
+            <img src={logo} alt="logo" />
+          </div>
           <div className="company-info-wrapper">
             <div className="company-info">
-              <div>{jobData.company}</div>
-              <div>{jobData.website}</div>
+              <div className="job-company-name">{company}</div>
+              <div className="job-company-website">{website}</div>
             </div>
             <button className="company-site-btn">Company site</button>
           </div>
         </div>
-      </div>
-      <div className="job-description">
-        <div>{jobData.description}</div>
-        <div className="dot">.</div>
-        {jobData?.requirements?.content && <div>{jobData.requirements.content}</div>}
-      </div>
-      <div>
-        <div className="position-name">{jobData.position}</div>
-        <button>Apply Now</button>
-      </div>
-      <div className="location-name">{jobData.location}</div>
-      <p>ppp</p>
-      <footer>
-        <div>
-          <div>jjj</div>
-          <div>kkk</div>
+        <div className="job-description-wrapper">
+          <div className="job-info-wrapper">
+            <div className="job-information-wrapper">
+              <div className="job-information">
+                <div>{postedAt}</div>
+                <div className="dot">.</div>
+                <div>{contract}</div>
+              </div>
+              <div className="job-position">{position}</div>
+              <div className="job-location">{location}</div>
+            </div>
+            <div className="apply-now-btn-wrapper">
+              <button className="apply-now-btn">Apply Now</button>
+            </div>
+          </div>
+          <div className="job-description">{description}</div>
+          <h2>Requirements:</h2>
+          {requirements?.content && <div className="job-content">{requirements.content}</div>}
+          <ul className="job-item">
+            {requirements?.items.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+          <h2>Role:</h2>
+          {role?.content && <div className="job-role-content">{role.content}</div>}
+          <ul className="role-item">
+            {role?.items.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
         </div>
-        <button>Apply Now</button>
+      </div>
+      <footer className="footer-wrapper">
+        <div className="footer-job-wrapper">
+          <div className="footer-job-info">
+            <div className="footer-job-position">{position}</div>
+            <div>{company}</div>
+          </div>
+          <button className="footer-btn">Apply Now</button>
+        </div>
       </footer>
     </>
   );
 };
-
-{
-  /* <div className="job-wrapper">
-<div className="job-header">
-  <img className="job-img" src={jobData.logo} alt="Company Logo" />
-  <div className="company-info-wrapper">
-    <div className="company-info">
-      <div>{jobData.company}</div>
-      <div>{jobData.website}</div>
-    </div>
-    <button className="company-site-btn">Company site</button>
-  </div>
-</div>
-</div>
-<div className="job-description">
-<div>{jobData.description}</div>
-<div className="dot">.</div>
-<div>{jobData.requirements}</div>
-</div>
-<div>
-<div className="position-name">{jobData.position}</div>
-<button>Apply Now</button>
-</div>
-<div className="location-name">{jobData.location}</div>
-<p>ppp</p>
-<footer>
-<div>
-  <div>jjj</div>
-  <div>kkk</div>
-</div>
-<button>Apply Now</button>
-</footer> */
-}

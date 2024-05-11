@@ -8,7 +8,7 @@ export const JobsList = ({ data }) => {
       <ul className="jobs-list">
         {data.map(({ postedAt, position, logo, location, id, company, contract, logoBackground }) => (
           <li key={id} className="job">
-            <Link to={`/job/${id}`}>
+            <Link to={`/job/${id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
               <div style={{ '--color': logoBackground }} className="image-logo">
                 <img src={logo} alt="logo" />
               </div>
