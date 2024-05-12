@@ -6,10 +6,10 @@ import './header.css';
 
 export const Header = () => {
   return (
-    <div className="header-wrapper">
+    <header className="header-wrapper">
       <IconLogo className="header-logo" />
       <BgHeader className="header-background" />
       <ToggleTheme />
-    </div>
+    </header>
   );
 };
