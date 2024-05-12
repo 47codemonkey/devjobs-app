@@ -10,34 +10,6 @@
   z-index: 1;
 }
 
-/* 
-document.querySelector("#switch").oninput = () => {
-	if (document.querySelector("#switch").checked == true) {
-		document.querySelector("body").classList.add("dark");
-	} else {
-		document.querySelector("body").classList.remove("dark");
-	}
-}; */
-
-/* $dark: #333;
-$light: #fff; */
-
-/* body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100vw;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  background-color: #fff;
-  transition: 0.4s;
-}
-
-body.dark {
-  background-color: #333;
-} */
-
 .switch {
   position: relative;
 }
@@ -79,7 +51,7 @@ body.dark {
   border-radius: 100%;
   border: 2px #333 solid;
   background-color: #fff;
-  color: #333;
+  color: #121721;
   transition: 0.4s;
   content: '\f185';
   font-family: 'Font Awesome 5 Free';
@@ -95,7 +67,7 @@ body.dark {
 .switch__input:checked + .switch__label::before {
   left: calc(100% - 18px);
   border-color: #fff;
-  background-color: #333;
+  background-color: var(--background-color);
   color: #fff;
   content: '\f186';
 }

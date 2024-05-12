@@ -16,7 +16,9 @@ export const Search = () => {
         </div>
         <div className="search-btn-wrapper">
           <input className="checkbox-input" type="checkbox" id="myCheckbox" name="" />
-          <label htmlFor="myCheckbox">Full Time Only</label>
+          <label className="label-name" htmlFor="myCheckbox">
+            Full Time Only
+          </label>
           <button className="search-btn" type="submit">
             Search
           </button>

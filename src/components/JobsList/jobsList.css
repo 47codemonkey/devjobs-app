@@ -14,7 +14,7 @@
 
 .job {
   height: 228px;
-  background-color: white;
+  background-color: var(--secondary-background-color);
   border-radius: 10px;
   padding-inline: 30px;
 }
@@ -65,6 +65,7 @@
 
 .position-name {
   margin-bottom: 15px;
+  color: var(--text-color);
 }
 
 .company-name {
