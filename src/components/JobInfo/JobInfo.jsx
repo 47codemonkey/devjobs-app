@@ -66,14 +66,14 @@ export const JobInfo = () => {
             </div>
           </div>
           <div className="job-description">{description}</div>
-          <h2>Requirements:</h2>
+          <h2 className="job-description-title">Requirements:</h2>
           {requirements?.content && <div className="job-content">{requirements.content}</div>}
           <ul className="job-item">
             {requirements?.items.map((item, index) => (
               <li key={index}>{item}</li>
             ))}
           </ul>
-          <h2>Role:</h2>
+          <h2 className="job-description-title">Role:</h2>
           {role?.content && <div className="job-role-content">{role.content}</div>}
           <ul className="role-item">
             {role?.items.map((item, index) => (

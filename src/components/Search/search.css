@@ -23,7 +23,7 @@
   max-width: 100%;
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
-  border-right: 1px solid rgb(206, 205, 205);
+  border-right: 1px solid #cecdcd;
   height: inherit;
 }
 
@@ -48,7 +48,7 @@
   justify-content: space-around;
   width: 350px;
   max-width: 100%;
-  border-right: 1px solid rgb(206, 205, 205);
+  border-right: 1px solid #cecdcd;
   height: inherit;
 }
 
@@ -86,8 +86,8 @@
   height: 48px;
   border-radius: 10px;
   border: none;
-  background-color: rgba(89, 100, 224, 1);
-  color: white;
+  background-color: #5964e0;
+  color: #ffffff;
   font-weight: bold;
   font-size: 16px;
 }

@@ -48,7 +48,7 @@
 }
 
 .job-company-website {
-  color: rgba(110, 128, 152, 1);
+  color: var(--secondary-text-color);
 }
 
 .company-site-btn {
@@ -57,8 +57,8 @@
   height: 48px;
   border-radius: 10px;
   border: none;
-  background-color: rgb(201, 201, 201, 1);
-  color: rgba(89, 100, 224, 1);
+  background-color: #c9c9c9;
+  color: #5964e0;
   font-weight: bold;
   font-size: 16px;
 }
@@ -78,7 +78,7 @@
   max-width: 100%;
   display: flex;
   justify-content: space-between;
-  color: rgba(110, 128, 152, 1);
+  color: var(--secondary-text-color);
   margin-bottom: 10px;
 }
 
@@ -99,8 +99,8 @@
   height: 48px;
   border-radius: 10px;
   border: none;
-  background-color: rgba(89, 100, 224, 1);
-  color: white;
+  background-color: #5964e0;
+  color: #ffffff;
   font-weight: bold;
   font-size: 16px;
 }
@@ -112,16 +112,22 @@
 
 .job-position {
   font-size: 28px;
+  font-weight: bold;
+  color: var(--text-color);
   margin-bottom: 10px;
 }
 
+.job-description-title {
+  color: var(--text-color);
+}
+
 .job-location {
-  color: rgba(89, 100, 224, 1);
+  color: #5964e0;
   font-weight: bold;
 }
 
 .job-description {
-  color: rgba(110, 128, 152, 1);
+  color: var(--secondary-text-color);
   line-height: 1.5;
 }
 
@@ -131,30 +137,30 @@
 }
 
 .job-website {
-  color: rgba(110, 128, 152, 1);
+  color: var(--secondary-text-color);
 }
 
 .job-content {
-  color: rgba(110, 128, 152, 1);
+  color: var(--secondary-text-color);
   line-height: 1.5;
   margin-bottom: 10px;
 }
 
 .job-item {
-  color: rgba(110, 128, 152, 1);
+  color: var(--secondary-text-color);
   line-height: 1.5;
   list-style-type: circle;
   padding-left: 20px;
 }
 
 .job-role-content {
-  color: rgba(110, 128, 152, 1);
+  color: var(--secondary-text-color);
   line-height: 1.5;
   margin-bottom: 10px;
 }
 
 .role-item {
-  color: rgba(110, 128, 152, 1);
+  color: var(--secondary-text-color);
   line-height: 1.5;
   list-style-type: circle;
   padding-left: 20px;
@@ -182,8 +188,8 @@
   height: 48px;
   border-radius: 10px;
   border: none;
-  background-color: rgba(89, 100, 224, 1);
-  color: white;
+  background-color: #5964e0;
+  color: #ffffff;
   font-weight: bold;
   font-size: 16px;
 }

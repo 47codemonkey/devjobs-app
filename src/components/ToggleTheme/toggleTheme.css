@@ -32,7 +32,7 @@
   position: relative;
   width: 48px;
   height: 24px;
-  background-color: #333;
+  background-color: #333333;
   border-radius: 25px;
   transition: 0.4s;
 }
@@ -49,8 +49,8 @@
   width: 18px;
   height: 18px;
   border-radius: 100%;
-  border: 2px #333 solid;
-  background-color: #fff;
+  border: 2px #333333 solid;
+  background-color: #ffffff;
   color: #121721;
   transition: 0.4s;
   content: '\f185';
@@ -61,13 +61,13 @@
 }
 
 .switch__input:checked + .switch__label {
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .switch__input:checked + .switch__label::before {
   left: calc(100% - 18px);
-  border-color: #fff;
+  border-color: #ffffff;
   background-color: var(--background-color);
-  color: #fff;
+  color: #ffffff;
   content: '\f186';
 }

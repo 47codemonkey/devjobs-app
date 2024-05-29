@@ -5,18 +5,22 @@
   --secondary-background-color-lt: #ffffff;
   --text-color-lt: #ffffff;
   --text-color-dt: #19202d;
+  --secondary-text-color-lt: #6e8098;
+  --secondary-text-color-dt: #9daec2;
 }
 
 [data-theme='light'] {
   --background-color: var(--background-color-lt);
   --secondary-background-color: var(--secondary-background-color-lt);
   --text-color: var(--text-color-dt);
+  --secondary-text-color: var(--secondary-text-color-lt);
 }
 
 [data-theme='dark'] {
   --background-color: var(--background-color-dt);
   --secondary-background-color: var(--secondary-background-color-dt);
   --text-color: var(--text-color-lt);
+  --secondary-text-color: var(--secondary-text-color-dt);
 }
 
 .wrapper {
